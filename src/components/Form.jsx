@@ -7,7 +7,7 @@ function Form({addWatch}) {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        addWatch({ nameWatch, timeZone });
+        addWatch({ nameWatch, timeZone, id: Date.now() });
         setNameWatch('');
         setTimeZone('');
     }

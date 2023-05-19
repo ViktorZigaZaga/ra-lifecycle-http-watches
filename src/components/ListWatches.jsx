@@ -6,8 +6,8 @@ function ListWatches({ listWatches, onDelete }) {
 
   return (
     <ul className="list-watches">
-      {listWatches.map((item, i) => 
-          <li className="list-item" key={Date.now() + i*3}>
+      {listWatches.map((item) => 
+          <li className="list-item" key={item.id}>
             <Watch watch={item} onDelete={onDelete} />   
           </li> 
       )}

@@ -11,7 +11,7 @@ function App() {
   };
 
   const onDelete = (id) => {
-    listWatches.filter(item => item.id !== id);
+    setListWatches(prev => prev.filter(item => item.id !== id));
   };
 
   return (
